@@ -65,9 +65,16 @@ class Slider {
       behavior: 'smooth',
     })
   }
+
+  static carusel = () => {
+    setInterval(() => {
+      this.#slide('right')
+    }, 3000)
+  }
 }
 
 Slider.init()
+Slider.carusel()
 
 class Header {
   static #button = null
