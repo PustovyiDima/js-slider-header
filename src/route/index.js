@@ -3,11 +3,11 @@ const express = require('express')
 const router = express.Router()
 
 // Підключіть файли роутів
-const test = require('./test')
+const slider_header = require('./slider_header')
 // Підключіть інші файли роутів, якщо є
 
 // Об'єднайте файли роутів за потреби
-router.use('/', test)
+router.use('/', slider_header)
 // Використовуйте інші файли роутів, якщо є
 
 // Експортуємо глобальний роутер

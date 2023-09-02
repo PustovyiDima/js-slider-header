@@ -1,13 +1,44 @@
-{{!
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
-}}
+<div class="page">
+    <header class="header">
+        <div class="header__top">
+            <div class="header__list">
+                <a class="header__link">Home</a>
+                <a class="header__link">About</a>
+                <a class="header__link">Contact</a>
+            </div>
+            <button class="header__button header__button--burger"></button>
+        </div>
+        <div class="header__wraper">
+            <div class="header__bottom">
+                <div class="header__list header__list--top">
+                    <a class="header__menu__item">Service</a>
+                    <a class="header__menu__item">Privacy</a>
+                    <a class="header__menu__item">Clients</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<main>
-	{{>heading title="Index" info=data.test}}
-</main>
+    <section class=" slider">
+        <div class="slider__content">
+            <img class="slider__item" src="https://picsum.photos/600/400?random=1">
+            <img class="slider__item" src="https://picsum.photos/600/400?random=2">
+            <img class="slider__item" src="https://picsum.photos/600/400?random=3">
+            <img class="slider__item" src="https://picsum.photos/600/400?random=4">
+            <img class="slider__item" src="https://picsum.photos/600/400?random=5">
+        </div>
 
-{{!
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
-}}
+
+
+        <button class="slider__button slider__button--left"></button>
+        <button class="slider__button slider__button--right"></button>
+
+
+    </section>
+
+
+
+
+
+
+</div>
